@@ -1,0 +1,40 @@
+{
+    "name": "fiberphp/demo",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../fiber-core"
+        },
+        {
+            "type": "path",
+            "url": "../fiber-http"
+        },
+        {
+            "type": "path",
+            "url": "../fiber-memcache"
+        },
+        {
+            "type": "path",
+            "url": "../fiber-mysql"
+        },
+        {
+            "type": "path",
+            "url": "../fiber-redis"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Fiber\\": "./src"
+        }
+    },
+    "require": {
+        "fiberphp/core": "dev-master",
+        "fiberphp/http": "dev-master",
+        "fiberphp/memcache": "dev-master",
+        "fiberphp/mysql": "dev-master",
+        "fiberphp/redis": "dev-master",
+        "nikic/fast-route": "^1.2"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
